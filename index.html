@@ -1,0 +1,58 @@
+﻿ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Thank you!</title>
+<style>
+html,body{
+   height: 90%;
+}
+html{
+   color: white;
+   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+body{
+   background-image: url('index.png');
+   background-position: 0px 0px;
+   background-repeat: repeat;
+   background-attachment: scroll;
+   background-size: auto 112%;
+}
+
+.centered{
+   text-align: center;
+}
+
+img {
+  position:absolute;
+  top: 48%;
+  margin-left: 48%;
+}
+
+#footer{
+   position:fixed;
+   width:100%;
+   left: 0;
+   bottom: 20px;
+}
+</style>
+<script>
+var bodyX = 0;
+function aniBG(){
+   bodyX = bodyX - 1;
+   document.body.style.backgroundPositionX = parseInt(bodyX) + "px";
+   setTimeout(aniBG, 80);
+}
+</script>
+</head>
+<body onload="aniBG()">
+
+<h1 class="centered">This website has Ended</h1>
+<p class="centered">Thank you!</p>
+
+<img src="bird.gif" />
+
+<p id="footer" class="centered">From 2011 to 2019</p>
+</body>
+</html> 
